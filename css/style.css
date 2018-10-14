@@ -7,7 +7,7 @@ body {overflow: hidden;
 
 }
 video {
-	position: absolute;
+	position: relative;
 	z-index: -1;
 	min-width: 100%;
 	min-height: 100%;
@@ -15,6 +15,16 @@ video {
 	overflow: hidden;
 	opacity: 0.6;
 }
+.video iframe,  
+.video object,  
+.video embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 canvas { z-index: -1; position: absolute; }
 
 .home { padding-top: 25px; }
